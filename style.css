@@ -5,6 +5,16 @@ background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: top center;
+font-family: Open Sans, sans-serif;
+color: white;
+}
+
+p a {
+  color: white;
+}
+
+p span {
+  font-weight: bold;
 }
 
 .Content {
