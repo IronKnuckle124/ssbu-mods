@@ -1,4 +1,4 @@
-var ids_done = [
+/*var ids_done_old = [
 "14759",
 "7615",
 "7537",
@@ -19,7 +19,28 @@ var ids_done = [
 "7582",
 "7562",
 "7526"
-]; 
+];*/
+
+var ids_done = new Map();
+ids_done.set("14759","487718");
+ids_done.set("7526","535378");
+ids_done.set("7562","533197");
+ids_done.set("7582","527097");
+ids_done.set("7577","524983");
+ids_done.set("7538","519309");
+ids_done.set("7537","517448");
+ids_done.set("7541","516115");
+ids_done.set("7573","513263");
+ids_done.set("7535","512016");
+ids_done.set("7590","510387");
+ids_done.set("7570","500417");
+ids_done.set("7550","496197");
+ids_done.set("7572","489033");
+ids_done.set("7547","482946");
+ids_done.set("7534","477537");
+ids_done.set("7586","471953");
+ids_done.set("7545","468121");
+ids_done.set("7544","463550");
 
 var ids_ignore = [
 "7523",
@@ -40,8 +61,10 @@ var ids_wip = [
 
 $( "record" ).each(function( index ) {
   var char_id = $( this ).find("a")[0].href.split("/").pop();
-  if(ids_done.includes(char_id)) {
+  $( this ).find("a")[0].href = "#";
+  if(ids_done.has(char_id)) { // replaces has with includes for array
     $( this ).addClass("done");
+    $( this ).find("a")[0].href = "https://gamebanana.com/mods/".concat(ids_done.get(char_id));
   }
   if(ids_ignore.includes(char_id)) {
     $( this ).addClass("ignore");
