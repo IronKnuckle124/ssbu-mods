@@ -43,6 +43,10 @@ record:hover {
   background-color: #4d73aa;
 }
 
+record:not(.done):hover {
+filter: grayscale(1);
+}
+
 record:not(.done) a {
   cursor: default;
 }
