@@ -1,0 +1,88 @@
+body {
+background-color: #162131;
+//background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://pbs.twimg.com/media/GAM1nEgWQAEf73b?format=jpg&name=4096x4096);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: top center;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: start;
+  font-family: arial;
+  /*column-gap: 10px;
+  row-gap: 2px;*/
+  height: 95vh;
+}
+
+record {
+display: flex;
+align-items: center;
+justify-content: end;
+border: 1px solid rgba(255,255,255,.05);
+border-bottom-width: 0;
+background: #00000078;
+box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+record.ignore {
+display: none;
+}
+
+record:before {
+content: "";
+width: 40px;
+padding: 8px;
+text-align: center;
+font-size: 23px;
+}
+
+record.done:before {
+content: "✅";
+}
+
+record.wip:before {
+content: "*️⃣";
+}
+
+record:last-child {
+border-bottom-width: 1px;
+}
+
+record > * {
+padding: 8px;
+}
+
+.Icon img {
+aspect-ratio: 1/1;
+width: 40px;
+object-fit: contain;
+filter: drop-shadow(5px 5px 1px #000);
+}
+
+.ShowSubcategoriesButton {
+display: none;
+}
+
+.Info {
+/*display: flex;*/
+display: none;
+justify-content: end;
+gap: 8px;
+margin-left: auto;
+align-items: center;
+}
+
+.Info a {
+text-align: end;
+color: gold;
+text-decoration: none;
+display: inline-block;
+max-width: min-content;
+}
+
+.Info itemcount {
+color: white;
