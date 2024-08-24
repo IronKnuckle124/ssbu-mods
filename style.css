@@ -43,7 +43,19 @@ record:hover {
   background-color: #4d73aa;
 }
 
-record:not(.done):hover {
+record.wip:hover:after {
+  content: "Coming Soon";
+  background-color: #242424;
+  padding: 4px 5px;
+  border-radius: 10px;
+  margin-top: 70px;
+  z-index: 9999999;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+
+
+record:not(.done, .wip):hover {
 filter: grayscale(1);
 }
 
