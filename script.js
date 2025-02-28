@@ -50,6 +50,7 @@ var ids_ignore = [
 
 
 var ids_wip = [
+"7581"
 ]
 
 $( "record" ).each(function( index ) {
@@ -66,3 +67,6 @@ $( "record" ).each(function( index ) {
     $( this ).addClass("wip");
   }
 });
+
+if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "")
+    $('body').addClass("local");
