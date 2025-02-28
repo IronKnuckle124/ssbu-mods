@@ -106,27 +106,33 @@ record.ignore {
 display: none;
 }
 
-record:before {
+record a:before {
 content: "";
 font-size: 1.5em;
 text-align: center;
 text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
-record.done:before {
+record a img {
+  padding: 8px;
+}
+
+record a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+record.done a:before {
 content: "✅";
 }
 
-record.wip:before {
+record.wip a:before {
 content: "*️⃣";
 }
 
 record:last-child {
 border-bottom-width: 1px;
-}
-
-record > * {
-padding: 8px;
 }
 
 .Icon img {
@@ -135,7 +141,7 @@ object-fit: contain;
 filter: drop-shadow(5px 5px 1px #0000009c);
 }
 
-.Icon img, record:before {
+.Icon img, record a:before {
 width: 2.4em;
 }
 
@@ -176,7 +182,7 @@ color: white;
 }
 
 @media (max-width: 768px) {
-.Icon img, record:before {
+.Icon img, record a:before {
 width: 1.9em;
 }
 
