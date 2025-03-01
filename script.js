@@ -44,7 +44,9 @@ var ids_ignore = [
 "7615",
 "7613",
 "7542",
-"7549"
+"7549",
+"7604",
+"7579"
 ];
 
 
@@ -68,5 +70,29 @@ $( "record" ).each(function( index ) {
   }
 });
 
+
 if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "")
     $('body').addClass("local");
+
+let counter = 1;
+$('body').attr("bgindex",counter);
+
+function incrementCounter() {
+    
+    counter++;
+    $('body').addClass("change");
+
+setTimeout(function() {
+$('body').attr("bgindex",counter);
+}, 1000);
+
+setTimeout(function() {
+$('body').removeClass("change");
+}, 2000);
+
+    if (counter >= 9) {
+        counter = 1;
+    }
+}
+
+setInterval(incrementCounter, 9000);
