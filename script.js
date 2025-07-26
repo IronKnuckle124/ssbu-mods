@@ -64,6 +64,8 @@ var ids_ignore = [
 
 
 var ids_wip = [
+"7569",
+"7571"
 ]
 
 $( "record" ).each(function( index ) {
