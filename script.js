@@ -44,6 +44,8 @@ ids_done.set("7600","596526");
 ids_done.set("7593","600810");
 ids_done.set("7578","602794");
 ids_done.set("7605","606025");
+ids_done.set("7569","609849");
+ids_done.set("7571","609850");
 
 var ids_ignore = [
 "7523",
@@ -64,8 +66,6 @@ var ids_ignore = [
 
 
 var ids_wip = [
-"7569",
-"7571"
 ]
 
 $( "record" ).each(function( index ) {
