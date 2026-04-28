@@ -52,6 +52,7 @@ ids_done.set("7567","642601");
 ids_done.set("7564","646843");
 ids_done.set("7524","650114");
 ids_done.set("7610","658372");
+ids_done.set("7596","672757");
 
 var ids_ignore = [
 "7523",
