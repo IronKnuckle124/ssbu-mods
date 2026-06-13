@@ -6,7 +6,7 @@ ids_done.set("7582","527097");
 ids_done.set("7577","524983");
 ids_done.set("7538","519309");
 ids_done.set("7537","517448");
-ids_done.set("7541","516115");
+ids_done.set("7541","677986");
 ids_done.set("7573","513263");
 ids_done.set("7535","512016");
 ids_done.set("7590","510387");
@@ -53,6 +53,7 @@ ids_done.set("7564","646843");
 ids_done.set("7524","650114");
 ids_done.set("7610","658372");
 ids_done.set("7596","672757");
+ids_done.set("7608","685507");
 
 var ids_ignore = [
 "7523",
